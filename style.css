@@ -8,6 +8,13 @@
 }
 
 @font-face {
+    font-family: 'Cinzel';
+    src: url('assets/fonts/Cinzel-VariableFont.ttf') format('truetype');
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
     font-family: 'Lancelot';
     src: url('assets/fonts/Lancelot-Regular.ttf') format('truetype');
     font-weight: normal;
@@ -25,6 +32,7 @@
     --cream-light: #d9fff2;
     --text-primary: #2C2C2C;
     --font-heading: 'Bellefair', serif;
+    --font-heading-alt: 'Cinzel', serif;
     --font-script: 'Great Vibes', cursive;
     --font-body: 'Lancelot', sans-serif;
     --section-height: 100svh;
@@ -541,16 +549,15 @@ h3 {
     gap: 8px;
 
     color: #fff;
-    text-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
+    text-shadow: 0 6px 4px rgb(0, 0, 0);
 }
 
 .scroll-indicator-text {
-    font-family: var(--font-heading);
-    /* Lancelot */
+    font-family: var(--font-heading-alt);
     text-transform: uppercase;
     letter-spacing: 0.15em;
-    font-size: 0.9rem;
-    font-weight: 400;
+    font-size: 1rem;
+    font-weight: 800;
 }
 
 .scroll-indicator.hidden {
@@ -564,7 +571,7 @@ h3 {
     stroke: #fff;
     stroke-width: 1.5;
     fill: none;
-    filter: drop-shadow(0 0 10px rgba(212, 175, 55, 0.4));
+    filter: drop-shadow(0 6px 4px rgb(0, 0, 0));
 }
 
 @keyframes bounce {
